@@ -5,6 +5,9 @@ import { useQuery } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
 
 
+// console.log(process.env.REACT_APP_NEWS_API_KEY)
+
+
 
 const News = () => {
  
@@ -14,7 +17,7 @@ const News = () => {
   url: `https://google-news13.p.rapidapi.com/sport`,
   params: {lr: 'en-US'},
   headers: {
-    'x-rapidapi-key': '90f1f5611cmsh71a35539b7795f8p1e0ac0jsn17117842c2cb',
+    'x-rapidapi-key': 'f0b4169e9cmsh201998d27af28a4p107c0ajsn708e87b389ee',
     'x-rapidapi-host': 'google-news13.p.rapidapi.com'
   }
 };
@@ -41,7 +44,7 @@ const isMediaMatch = useMediaQuery(theme.breakpoints.down('md'))
   return (
     <>
      <div className={isMediaMatch ?
-     'bg-[f9f9f9] w-full mt-[20%] flex flex-col items-center justify-center mx-auto' :
+     'bg-gray-100 w-full mt-[20%] flex flex-col items-center justify-center mx-auto' :
      'bg-[f9f9f9] w-[80%] mt-[12%] flex flex-col items-center justify-center mx-auto'}>
       <Paper elevation={2} className={isMediaMatch ? 'w-full px-2 py-14 flex items-center justify-center' : 'w-full px-2 py-14 flex items-center justify-center'}>
         <span className={isMediaMatch  ? 
