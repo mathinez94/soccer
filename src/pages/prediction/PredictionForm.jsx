@@ -37,8 +37,8 @@ const handleSubmit = async (e) => {
     console.log('Form submitted:', formData);
 
         try {
-            const response = await axios.post(`http://localhost:3000/auth/prediction_form/${id}`, formData);
-            console.log(response);
+            const response = await axios.post(`https://soccer-math.netlify.app/auth/prediction_form/${id}`, formData);
+            console.log(response); 
 
             if(response.status === 201){
             alert('Prediction submitted successfully');
