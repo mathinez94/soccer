@@ -28,7 +28,7 @@ const Register = () => {
 
         // Perform registration logic here
         try {
-            const response = await axios.post('http://localhost:3000/auth/register', formData);
+            const response = await axios.post('https://soccer-math.netlify.app/register', formData);
             console.log('Registration successful:', response);
 
             // Handle success (e.g., redirect to login page or show success message)

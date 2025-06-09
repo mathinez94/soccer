@@ -17,7 +17,12 @@ const Prediction = () => {
   const fetchUser = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('https://soccer-math.netlify.app/auth/prediction', { 
+      if (!token) {
+        console.log("No token found");
+        return;
+      };
+      console.log("Token:", token);
+      const response = await axios.get('https://soccer-math.netlify.app/prediction', { 
         headers: {
           'authorization': `Bearer ${token}`
         }
