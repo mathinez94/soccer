@@ -26,7 +26,7 @@ const Login = () => {
         console.log(formData);
 
         try {
-            const response = await axios.post('https://soccer-math.netlify.app/auth/login', formData);
+            const response = await axios.post('https://soccer-spot.onrender.com/auth/login', formData);
             console.log('Login successful:', response.data);
 
             // Store the token in local storage
