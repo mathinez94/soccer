@@ -22,7 +22,7 @@ const Prediction = () => {
         return;
       };
       console.log("Token:", token);
-      const response = await axios.get('https://soccer-math.netlify.app/prediction', { 
+      const response = await axios.get('https://soccer-spot.onrender.com/auth/prediction', { 
         headers: {
           'authorization': `Bearer ${token}`
         }
