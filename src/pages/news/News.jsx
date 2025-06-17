@@ -17,7 +17,7 @@ const News = () => {
   url: `https://google-news13.p.rapidapi.com/sport`,
   params: {lr: 'en-US'},
   headers: {
-    'x-rapidapi-key': 'f0b4169e9cmsh201998d27af28a4p107c0ajsn708e87b389ee',
+    'x-rapidapi-key': '9a6c81044bmshd1b5d03d345b732p1ef8f8jsn6f444d93d598',
     'x-rapidapi-host': 'google-news13.p.rapidapi.com'
   }
 };
